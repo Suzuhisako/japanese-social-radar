@@ -22,30 +22,21 @@
             border: 1px solid #eee;
         }
 
-        /* STRENGTHENED HEADER */
         .masterpiece-header {
-            border-bottom: 3px solid #8B7355; /* Thicker Gold Line */
+            border-bottom: 3px solid #8B7355;
             padding-bottom: 30px;
             margin-bottom: 30px;
         }
 
         .title-group {
             display: flex;
-            flex-direction: column; /* Stacked for more power */
+            flex-direction: column;
             gap: 5px;
             margin-bottom: 20px;
         }
 
         .title-jp { font-size: 25px; font-weight: 800; color: #8B7355; margin: 0; }
-        
-        /* SOLID ENGLISH TITLE */
-        .title-en { 
-            font-size: 28px; 
-            font-weight: 700; 
-            color: #333; /* Darker, more solid grey */
-            margin: 0; 
-            letter-spacing: -0.5px;
-        }
+        .title-en { font-size: 30px; font-weight: 700; color: #333; margin: 0; letter-spacing: -0.5px; }
 
         .summary-container {
             display: grid;
@@ -56,30 +47,33 @@
 
         .summary-box { font-size: 15px; color: #444; text-align: justify; line-height: 1.7; }
 
-        /* USER GUIDE SECTION */
+        /* UPDATED DUAL-LANGUAGE USER GUIDE */
         .user-guide {
             background: #f9f6f2;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             margin-bottom: 40px;
             border-left: 5px solid #8B7355;
         }
 
         .guide-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 800;
             color: #8B7355;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-transform: uppercase;
+            border-bottom: 1px solid #e0dcd5;
+            padding-bottom: 5px;
         }
 
         .guide-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            font-size: 14px;
-            color: #555;
+            gap: 40px;
         }
+
+        .guide-col { font-size: 14px; color: #444; line-height: 1.6; }
+        .guide-col strong { color: #8B7355; display: block; margin-bottom: 5px; }
 
         .chart-frame {
             width: 100%;
@@ -95,7 +89,7 @@
 <div class="container">
     <header class="masterpiece-header">
         <div class="title-group">
-            <h1 class="title-en">Japanese Social Radar: The Hidden Intent Edition</h1>
+            <h1 class="title-en">Japanese Social Radar: The Hidden Intent Edition V3.0</h1>
             <h2 class="title-jp">日本語ソーシャル・レーダー V3.0</h2>
         </div>
         
@@ -111,11 +105,19 @@
         <div class="user-guide">
             <div class="guide-title">How to Use / 操作方法</div>
             <div class="guide-grid">
-                <div>
-                    <strong>1. Hover & Explore:</strong> 外側のリング（フレーズ）にマウスを合わせると、詳細な解説と「本音」のニュアンスが表示されます。
+                <div class="guide-col">
+                    <strong>1. Hover & Explore</strong>
+                    Move your mouse over the outer rings to see the hidden intent and cultural context behind each phrase.
+                    <br><br>
+                    <strong>2. Listen to Nuance</strong>
+                    Click the "Play" button in the popup to hear the specific emotional pitch delivered by Neural AI.
                 </div>
-                <div>
-                    <strong>2. Listen to Nuance:</strong> ポップアップ内の再生ボタンをクリックして、AIによる「感情のこもった音声」を確認してください。
+                <div class="guide-col">
+                    <strong>1. マウス操作で探索</strong>
+                    外側のリングにカーソルを合わせると、各フレーズに隠された「本音」と社会的背景が表示されます。
+                    <br><br>
+                    <strong>2. ニュアンスを聴く</strong>
+                    ポップアップ内の再生ボタンをクリックすると、AIが再現した感情豊かな音声を確認できます。
                 </div>
             </div>
         </div>
@@ -128,7 +130,7 @@
     </iframe>
 
     <footer>
-        © 2026 Japanese Social Radar Project | Created with Gemini & Flourish
+        © 2026 Japanese Social Radar Project | Created with Neural AI & Flourish
     </footer>
 </div>
 
